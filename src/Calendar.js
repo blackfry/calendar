@@ -84,7 +84,7 @@ class Calendar extends React.Component {
     let currentDate = this.state.date;
     let month = currentDate.getMonth();
     let year = currentDate.getFullYear();
-    return new Date(year, month, 0).getDate();
+    return new Date(year, month, 0).getDate() - 1;
   }
 
   handleClick(e, x) {
